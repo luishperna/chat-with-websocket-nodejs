@@ -6,8 +6,8 @@ export default function createMessageSending(elementId, ws) {
         <div class="send-message">
             <h2>Enviar mensagem</h2>
             <div class="message-form">
-                <label>NOME: <input id="username" type="text"/></label>
-                <label>MENSAGEM: <input id="user-message" type="text" /></label>
+                <label>NOME: <input id="username" type="text" placeholder="Digite seu nome aqui."/></label>
+                <label>MENSAGEM: <input id="user-message" type="text" placeholder="Digite a mensagem aqui."/></label>
                 <button id="send-message-button" type="submit">ENVIAR</button>
             </div>
         </div>
@@ -19,7 +19,7 @@ export default function createMessageSending(elementId, ws) {
         const name = document.getElementById("username").value;
         const message = document.getElementById("user-message").value;
 
-        if (!name && !message) {
+        if (!name || !message) {
             alert("Necessário preencher os campos NOME e MENSAGEM!");
             return;
         }
