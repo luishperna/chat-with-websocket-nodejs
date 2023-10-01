@@ -1,5 +1,5 @@
 {
-  "name": "chat-with-websoket",
+  "name": "chat-with-websocket",
   "version": "1.0.0",
   "description": "Real-time chat using WebSocket",
   "main": "server/server.js",
