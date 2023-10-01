@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #2d2d2d;
+    font-family: 'Prompt', sans-serif;
+    color: #c2c2c2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 0.5rem;
+}
+
+#connection-status {
+    font-size: 16px;
+}
+
+.chat-background {
+    width: 96vw;
+    height: 82%;
+    border: 2px solid #c2c2c2;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.send-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.message-form {
+    display: flex;
+    gap: 2rem;
+}
+
+.message-form label input {
+    border: none;
+    border-bottom: 2px solid #c2c2c2;
+}
+
+.message-form label input:focus {
+    outline: none;
+}
+
+#messages {
+    max-height: 390px;
+    overflow-y: auto;
+}
+
+#user-message{
+    width: 30rem;
+}
+
+#send-message-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+#send-message-button:hover {
+    background-color: #c2c2c2;
+    color: #2d2d2d;
+    border-color: transparent;
+}
+
+.chat-messages {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #c2c2c2;
+    border-radius: 0.5rem;
+}
+
+.user-icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #c2c2c2;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #2d2d2d;
+    margin: 0.5rem 0.8rem;
+}
+
+.message-information {
+    font-size: 12px;
+}
