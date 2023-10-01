@@ -52,8 +52,8 @@ body {
 }
 
 #messages {
-    max-height: 390px;
-    overflow-y: auto;
+    max-height: 82%;
+    overflow-y: scroll;
 }
 
 #user-message{
