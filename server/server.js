@@ -20,7 +20,7 @@ server.on("connection", (ws) => {
 
             saveMessageTemporarily(newMessage);
 
-            const messagesList = getAllmessagesSaveTemporarily();
+            const messagesList = getAllMessagesSaveTemporarily();
             const mensagemResponse = { wsType: "chat-response", messagesList: messagesList }
 
             // Envia a mensagem para todos os clientes
@@ -42,6 +42,6 @@ function saveMessageTemporarily(messageObj) {
     temporarySavedMessages.push(messageObj);
 }
 
-function getAllmessagesSaveTemporarily() {
-    return temporarySavedMessages.reverse();
+function getAllMessagesSaveTemporarily() {
+    return temporarySavedMessages.slice().reverse();
 }
